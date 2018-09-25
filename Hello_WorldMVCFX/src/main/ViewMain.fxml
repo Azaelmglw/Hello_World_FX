@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="root_vbox" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../assets/SOConsole.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox fx:id="top_section_hbox" prefHeight="50.0" prefWidth="600.0" styleClass="background_2" VBox.vgrow="NEVER">
+         <children>
+            <VBox fx:id="top_left_section_hbox" prefHeight="50.0" prefWidth="300.0" HBox.hgrow="ALWAYS" />
+            <VBox fx:id="top_right_section_hbox" prefHeight="50.0" prefWidth="300.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox fx:id="working_area_hbox" alignment="CENTER" prefHeight="300.0" prefWidth="600.0" styleClass="background_4" VBox.vgrow="ALWAYS">
+         <children>
+            <Label fx:id="welcome_screen_lbl" blendMode="SRC_ATOP" styleClass="description_label" text="MVC" textFill="WHITE">
+               <font>
+                  <Font size="65.0" />
+               </font>
+            </Label>
+         </children></HBox>
+      <HBox fx:id="bottom_section_hbox" prefHeight="50.0" prefWidth="600.0" styleClass="background" VBox.vgrow="NEVER">
+         <children>
+            <VBox fx:id="bottom_left_section_vbox" alignment="CENTER" prefHeight="50.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button fx:id="hello_btn" blendMode="SRC_ATOP" cacheHint="QUALITY" depthTest="ENABLE" mnemonicParsing="false" onAction="#DisplayHelloMessage" styleClass="quick_menu_button" text="Hello" />
+               </children></VBox>
+            <VBox fx:id="bottom_right_section_vbox" alignment="CENTER" prefHeight="50.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Button fx:id="bye_btn" blendMode="SRC_ATOP" cacheHint="QUALITY" mnemonicParsing="false" onAction="#DisplayByeMessage" styleClass="quick_menu_button" text="Bye" />
+               </children></VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
